@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Secured: Password Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="/secured/index.html">Home</a></li>
+        <li>Generate Password</li>
+    </ul>
+</nav>
+<div class="container">
+    <img class="homepage" src="/secured/assets/logo.png" alt="Logo">
+    <h1>Generate Password</h1>
+    <label for="passwordLength">Password Length:</label>
+    <input type="number" id="passwordLength" min="6" max="30">
+    <br>
+    <input type="checkbox" id="lowercaseCheckbox" checked>
+    <label for="lowercaseCheckbox">Include Lowercase Letters</label>
+    <br>
+    <input type="checkbox" id="uppercaseCheckbox" checked>
+    <label for="uppercaseCheckbox">Include Uppercase Letters</label>
+    <br>
+    <input type="checkbox" id="digitsCheckbox" checked>
+    <label for="digitsCheckbox">Include Digits</label>
+    <br>
+    <input type="checkbox" id="specialCharsCheckbox" checked>
+    <label for="specialCharsCheckbox">Include Special Characters</label>
+    <br>
+    <button onclick="generatePassword()">Generate Password</button>
+    <p id="generatedPassword"></p>
+    <button onclick="copyPassword()">Copy Password</button>
+<br>
+    <a class="legal" href="/secured/legal.html">Legal</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
